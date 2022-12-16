@@ -1,2 +1,2 @@
-# heladoreal
+# helado-real
 heladeria
