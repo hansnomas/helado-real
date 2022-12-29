@@ -1,97 +1,381 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <title>Hans Herasimczuk 1°2°C</title>
+
+    <!-- Bootstrap y otras librerías -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/jquery.smartcart/css/smart_cart.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css">
+
+    <!-- Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    
+    <!-- Tipografias -->
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Hans Herasimczuk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,700&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="pa1">
-    
-    <header>
-    
-    <div>
-        <nav>
-            <ul class="secciones">
-                <li>
-                    <a href="indexn.html">
-                        INICIO
-                    </a>
-                </li>
-                <li>
-                    <a href="secciones/dibujos.html">
-                        DIBUJOS
-                    </a>
-                </li>
-                <li>
-                    <a href="secciones/manga.html">
-                        MANGAS
-                    </a>
-                </li>            
-            </ul>
-        </nav>
+<body>
+<!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-md">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.svg" alt="logo" height="63">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navegacion">
+        <!--<ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="localizar.html">Localizar tienda</a>
+          </li>
+        </ul>-->
+      </div>
     </div>
-    </header>
-    
-    <div class="a1">
-        <div class="b1">
-            <a href="img/inicio.png" target="_blank"><img class="perfil" src="img/inicio.png" alt="dibujo como foto de perfil"></a>
+    </nav>
+<!-- Fin Navbar -->
+
+<section id="staff">
+<!-- Banner -->
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 px-0 mt-1">
+                <img src="img/banner3.jpg" alt="1920x720" width="1920" height="720" class="img-fluid">
+            </div>
+            <div id="fondo" class="container bg-dark py-5 text-center ">
+                <div class="row">
+                    <div class="col">
+                        <h1>HELADO ARTESANAL</h1>
+                        <p>La más alta calidad</p>
+                    </div>
+                </div>
+                <!-- Call to action -->
+                <!--<div class="pt-4">
+                <div class="text-center">
+                  <button type="submit" class="btn  boton_2 rounded-5 px-4 "><a class="nav-link" href="productos.html" target="_blank">Sabores</a></button>  
+                </div>
+                </div>-->
+               </div> 
         </div>
-        <div class="b2">
-            <h1>Hans Herasimczuk</h1>
-        </div>
+</header>    
+<!-- Fin Banner--> 
+
+<!-- Novedades -->
+<div class="pt-4">
+    <div class="row col-12 text-center">
+        <h2 class="titulo">Novedades</h2>
+        <p class="lead">Conocé nuestras promos</p>   
+    </div>
+</div>
+<div id="latas" class="carousel carousel-dark slide container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/promo1.png" class="d-block w-100" alt="latarei">
+      </div>
+      <div class="carousel-item">
+        <img src="img/promo2.png" class="d-block w-100" alt="latashinji">
+      </div>
+      <div class="carousel-item">
+        <img src="img/promo3.png" class="d-block w-100" alt="lataasuka">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#latas" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#latas" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <hr> 
+  </div>
+<!-- Fin Novedades -->
+
+<!-- Call to action -->
+<!--<div class="pt-4">
+  <div class="text-center">
+    <button type="submit" class="btn  boton_2 rounded-5 px-4 "><a class="nav-link" href="productos.html" target="_blank">Ver promos</a></button>  
+  </div>
+</div>-->
+
+
+
+<article class="py-1">
+  <div  class="container">
+    <div class="row">
+      <div class="col-12 text-center py-5">
+        <h2 class="titulo">NOSOTROS</h2>
+        <p class="lead fs-1 display-1">un poco sobre nosotros</p>
+      </div>
+    </div>
+    <div 
+      class="row align-items-center flex-column-reverse flex-md-row-reverse rounded my-2 py-5 a"
+    >
+      <div class="col-md-6 col-lg-7 col-xl-8 text-center text-md-start">
+        <h3 class="display-5">
+          Elaboración</h3>
         
-    </div>
-    
-    
-    
-    <div class="contenedor">
-        <div class="columna-1">
-            <a href="img//prueba.png" target="_blank"><img src="img/prueba.png" alt="dibujo representativo de Hans"></a>
+        <div class="row bg-white rounded shadow p-5">
+          <div class="col">
+            <p>Helados con la más alta calidad, elaborados a través de procesos artesanales utilizando ingredientes naturales para lograr el mejor producto.</p>
+          </div>
         </div>
-        <div class="columna-2">
-            <p>Nací el 6 de Noviembre de 2001, tengo 20 años. Vivo en Villa Real, CABA.
-                Me gradué en <a href="https://www.fecea.edu.ar//" target="_blank"> ECEA</a> con bachillerato en informatica.                                
-                Luego estudie 2 años Diseño de Imagen y Sonido en la <a href="https://www.uba.ar" target="_blank"> UBA</a>.
-            </p>                
-            <p> Actualmente trabajo y decidí venir a ORT por varios motivos, entre ellos los temas abordados en la carrera.                
-                Relacionado a lo anterior, y volviendo un poco al pasado, siempre me gustó dibujar, diseñar, lo relacionado con crear.
-            </p>                
-            <p>
-                Siempre tuve de hobbie el dibujo pero algo que ayudó a fortalecerlo fue crecer junto a los videojuegos. SEGA Genesis, Pokemon, Age of Empires, entre otros.                
-                Gracias a eso, de chico siempre tuve un interes en las computadoras y tecnologias en general.                
-                Sumando este interes, con mi orientacion en la escuela secundaria, se hizo un buen resultado en las materias de informatica.
-            </p>
-        </div>
-    </div>
-    <div class="linea2"></div>
-    <div class="linea"></div>
-    <div class="gustos">
-        <h2 class="h2d">Mis intereses</h2>
-        <ul class="colores">
-            <li>Dibujo</li>
-            <li>Videojuegos</li>
-            <li>Mangas/Comics</li>
-            <li>Biologia</li>
-            <li>Arte</li>
-        </ul>
-        </div>
+      </div>
 
-    <div class="linea">
+      <figure class="col-md-6 col-lg-5 col-xl-4 px-5">
+        <img
+          src="img/1933.jpg"
+          alt="1933"
+          class="img-fluid img-thumbnail"
+        />     
+      </figure>
+    </div>
+  </div>
+</article>
+<article class="py-1">
+  <div class="container">
+    <div
+      class="row align-items-center flex-column-reverse flex-md-row rounded my-1 py-5 a"
+    >
+      <div class="col-md-6 col-lg-7 col-xl-8 text-center text-md-end">
+        <h3 class="display-5">
+          Responsabilidad
+        </h3>
+
+        <div class="row bg-white rounded shadow p-5">
+          <div class="col">
+            <p>En nuestro trabajo cuidamos hasta los mínimos detalles, perfeccionamos constantemente nuestros productos y brindamos el mejor servicio.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="col-md-6 col-lg-5 col-xl-4 px-5">
+        <img
+          src="img/1951.jpg"
+          alt="1951"
+          class="img-fluid img-thumbnail"
+        />
+      </figure>
+    </div>
+  </div>
+</article>
+<article class="py-1">
+  <div class="container">
+    <div
+      class="row align-items-center flex-column-reverse flex-md-row-reverse rounded shadow my-1 py-5"
+    >
+      <div class="col-md-6 col-lg-7 col-xl-8 text-center text-md-start">
+        <h3 class="display-5">
+          Sabores
+        </h3>
+        <div class="row bg-white rounded shadow p-5">
+          <div class="col">
+            <p>Una gran variedad de cremas, dulces de leche y chocolates, además de los sabores frutales más naturales y exquisitos para disfrutar en familia y con amigos.</p>
+            
+          </div>
+        </div>
+      </div>
+      <figure class="col-md-6 col-lg-5 col-xl-4 px-5">
+        <img
+          src="img/1958.jpg"
+          alt="1958"
+          class="img-fluid img-thumbnail"
+        />
+      </figure>
+    </div>
+  </div>
+</article>
+<article class="py-1">
+  <div class="container">
+    <div
+      class="row align-items-center flex-column-reverse flex-md-row rounded my-1 py-5 a"
+    >
+      <div class="col-md-6 col-lg-7 col-xl-8 text-center text-md-end">
+        <h3 class="display-5">
+          Servicios
+        </h3>
+
+        <div class="row bg-white rounded shadow p-5">
+          <div class="col">
+            <p>Hacenos tu pedido o acercate hasta nuestro local en Tinogasta 5739 de Villa Real y podrás disfrutar de los más ricos helados artesanales.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="col-md-6 col-lg-5 col-xl-4 px-5">
+        <img
+          src="img/1969.jpg"
+          alt="1969"
+          class="img-fluid img-thumbnail"
+        />
+      </figure>
+    </div>
+  </div>
+</article>
+
+
+<header>
+  <div   class="container-fluid">
+
+      <div class="row text-center pb-2 bg-dark py-3 mt-4" >
+          
+          <h1 style="color: #ffffff;">Encontranos en Tinogasta 5739 - CABA</h1>
+      </div>
+  </div>
+</header>
+<section>
+  
+  <div class="container-fluid">
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.344247117227!2d-58.52751128416709!3d-34.62073996590721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc92ffd9dfdbb%3A0xaa306d0158bac974!2sHelado%20Real!5e0!3m2!1ses-419!2sar!4v1671813879584!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>       
+  </div>
+</section>
+
+
+<hr class="my-4">
+
+
+
+
+
+
+<!-- Inicio Footer -->
+<footer class="bg-dark text-white py-4">
+<section data-bs-version="5.1" class="cid-sDJbYoqMcM" id="footer2-2e">
+  <div class="container">
+      <div class="media-container-row content mbr-white">
+          <div class="col-12 col-md-3 mbr-fonts-style display-7">
+              <p class="mbr-text"><strong>Dirección</strong>&nbsp;<br>
+                  <br>Tinogasta 5739<br>C1417AZY&nbsp;- C.A.B.A.<br>
+                  <br>
+                  <br><strong>Contacto</strong><br>
+                  <br>Cel: <a href="tel:+54 9 11 2400-0827" class="text-primary">011 2400-0827</a><a href="tel:011-3424-1111" class="text-secondary text-primary"><br></a><br>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <br>Telefono: <a href="tel:+54 4500-6139" class="text-primary">011 2400-0827</a><a href="tel:011-3424-1111" class="text-secondary text-primary"><br></a><br>&nbsp; &nbsp; &nbsp; &nbsp;</p>
+          </div>
+          <div class="col-12 col-md-3 mbr-fonts-style display-7">
+              <p class="mbr-text">
+                  <!--<strong>Links</strong>
+                  <br>
+                  <br><a class="text-primary" href="page1.html">Nosotros</a>&nbsp;<br><a class="text-primary" href="page2.html">Sabores</a>
+                  <br><a class="text-primary" href="page9.html">Servicios</a>&nbsp;<br>-->
+                  <br><strong>Empresa</strong>&nbsp;<br>
+                  <br>Helado Real<br>Helados Artesanales<br></p>
+          </div>
         
-    </div>
-    <footer style="justify-content: center;">
-        <div >
-            <p >© 2022 Hans Herasimczuk</p>
-        </div>
-    </footer>
+      </div>
+      <div class="footer-lower">
+          <div class="media-container-row">
+              <div class="col-sm-12">
+                  <hr>
+              </div>
+          </div>
+          <div class="media-container-row mbr-white">
+              <div class="col-sm-6 copyright">
+                  <p class="mbr-text mbr-fonts-style display-7">
+                      © Copyright 2021 - All Rights Reserved
+                  </p>
+              </div>
+              <div class="col-md-6">
+                  <div class="social-list align-right">
+                    <div class="iconos">
+                      <a href="https://www.instagram.com/helados_real/" target="_blank"><i class="bi bi-instagram text-light fs-5"></i></a>
+                      <a href="https://www.facebook.com/helado.real" target="_blank"><i class="bi bi-facebook text-light fs-5"></i></a>
+                    </div>
+         
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</footer>
+<!-- Fin Footer-->
 
+<!-- JavaScript, Bootstrap, jQuery -->
+    <div id="myDiv"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+    <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css">
+      
+    <script src="vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/jquery.smartcart/js/jquery.smartCart.js"></script>
+    <script src="vendors/jquery.owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
 
+<!-- Scripts -->
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
+<!-- validacion form -->
+     <script src="js/validacion.js"></script>
+
+<!-- Boton Back to Top -->
+<a id="button"></a>
+<!-- Fin Boton Back to Top -->
+    
 </body>
+
+    <script>
+        $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+        });
+        });
+    </script>
+
+<!-- Inicio burbuja Whatsapp-->
+    <script type="text/javascript">
+      $(function () {
+        $('#myDiv').venomButton({
+          phone: '5491124000827',
+          showPopup: 'True',
+          popupMessage: "Hola! Hacé tu pedido por acá.",
+          headerTilte: "Whatsapp Chat",
+          position: 'right'
+        });
+      });
+    </script>
+<!-- Fin burbuja Whatsapp-->
+
+<!-- Boton Back to Top -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+<script>
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+</script>
+<!-- Fin Boton Back to Top -->
 </html>
