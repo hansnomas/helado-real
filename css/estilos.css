@@ -1,0 +1,144 @@
+body{
+font-family: 'Poppins', sans-serif;
+background: url(../img/fondin3.svg) repeat center fixed;
+background-size: cover;
+}
+
+#staff{
+  background: url(../img/rec1.svg) no-repeat left top,
+    url(../img/rec2.svg) no-repeat right bottom;
+}
+#fondo{
+  background: url(../img/fondop.jpg) repeat center;
+
+}
+
+.boton-subir {
+    position: fixed;
+    right: 5%;
+    bottom: 10px;
+    background-color: #17181C;
+    padding: 20px;
+    display: none;
+    opacity: 0.7
+  }
+  
+  .boton-subir a {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  #car{
+    box-shadow: -10px 20px 50px  #000000;
+  }
+
+  h1{
+    font-weight: 900;
+    color: #DB1F26;
+  }
+  h2{
+    font-weight: 600;
+    color: #DB1F26;
+    font-size: 50px;
+  }
+  h3{
+    font-weight: 600;
+    color: #DB1F26;
+    font-size: 50px;
+  }
+  .titulo{
+    font-weight: 900;
+    color: #DB1F26;
+    font-size: 50px;
+  }
+  .a{
+    box-shadow: -10px 10px 50px  #3b3b3b;
+  }
+
+  #as{
+    height: 200px;
+    background-color: #272f7e;
+    align-items: flex-end;
+
+  }
+  
+  #button {
+    display: inline-block;
+    background-color: #DB1F26;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+
+
+    .boton_2{
+        border-width: 1pt;
+        border-color: #DB1F26;
+        color: #DB1F26;
+        
+  }
+    
+    .boton_2:hover{
+        background-color: #DB1F26;
+        color: #fff;
+        cursor: pointer;
+        transform: scale(1.08);
+        transition: all 0.20s ease;
+        font-weight: 600;
+        
+    }
+
+
+    .boton_3{
+      border-width: 1pt;
+      
+      background-color: #272f7e;
+      color: #ffffff;
+      
+}
+  
+  .boton_3:hover{
+    border-color: #272f7e;
+      color: #272f7e;
+      cursor: pointer;
+      transform: scale(1.08);
+      transition: all 0.20s ease;
+      font-weight: 600;
+      
+  }
+
+  .panc{
+    background-color: #08080828;
+  }
+   
